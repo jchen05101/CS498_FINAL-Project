@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/vega-tooltip/0.4.2/vega-tooltip.css" rel="stylesheet">
+  <base href="/v2/">
+</head>
+
+<body data-spy="scroll" data-target=".scrollspy">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">CS498 - Final Project</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Description</a></li>
+          <li class="active"><a href="sheet1.html">Happiness v.s. Capita</a></li>
+          <li><a href="sheet2.html">Happiness v.s. Life</a></li>
+          <li><a href="sheet3.html">Happiness v.s. Household</a></li>
+          <li><a href="sheet4.html">About Visualization</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="vis-tooltip" class="vg-tooltip"></div>
+
+  <div class="container">
+    <br>
+    <br>
+    <div class="page-header">
+      <h1>Happiness Score v.s Log GDP per Capita</h1>
+    </div>
+    <p class="lead">
+      If we compare life happiness reports from around the world at any given point in time, we can see that most countries with
+      higher average national incomes tend to have higher average life happiness scores. In other words: People in richer
+      countries tend to report higher life satisfaction than people in poorer countries. The scatter plot shows this. Each
+      dot in the graph represents one country. The vertical position of the dots shows Happiness scores; while the horizontal
+      position shows Log GDP per capita based on purchasing power parity.
+    </p>
+    <br>
+
+    <div class="sheet1Vis" id="sheet1Vis"></div>
+  </div>
+
+  <ul class="pager">
+    <li><a href="index.html">Previous</a></li>
+    <li><a href="sheet2.html">Next</a></li>
+  </ul>
+
+  <footer class="footer">
+    <div class="container">
+      <strong>Copyright &copy; 2017 <a href="https://github.com/maydayholic">Maydayholic</a>.</strong>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega/3.0.0-beta.38/vega.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-lite/2.0.0-beta.6/vega-lite.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-beta.19/vega-embed.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-tooltip/0.4.2/vega-tooltip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vega-embed/3.0.0-beta.14/vega-embed.min.js"></script>
+  <script src="lib/sheet1.js"></script>
+</body>
+
+</html>
